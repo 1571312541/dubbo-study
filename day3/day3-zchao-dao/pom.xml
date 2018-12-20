@@ -3,16 +3,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>dubbo-study</artifactId>
+        <artifactId>day3</artifactId>
         <groupId>cn.zcclj.dubbo</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>day3</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>day3-zchao-dao</artifactId>
 
-    <name>day3</name>
+    <name>day3-zchao-dao</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -62,8 +61,4 @@
             </plugins>
         </pluginManagement>
     </build>
-    <modules>
-        <module>day3-zchao-api</module>
-        <module>day3-zchao-dao</module>
-    </modules>
 </project>

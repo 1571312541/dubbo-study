@@ -22,7 +22,7 @@
     <!--version 版本可以选择,version="*" 则随机选择-->
     <!--stub 本地存根 或者stub = "true"-->
     <dubbo:reference interface="cn.zcclj.dubbo.service.OrderService" id="orderService"
-          timeout="1000" retries="2" version="2.0.0" stub="cn.zcclj.dubbo.service.UserServiceStub">
+          timeout="1000" retries="2" version="1.0.0">
         <!--可以指定具体方法的超时时间，优先级>reference标签>全局-->
         <!--<dubbo:method name="getUserInfo" timeout="1000"></dubbo:method>-->
     </dubbo:reference>

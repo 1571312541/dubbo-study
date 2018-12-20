@@ -7,11 +7,12 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 〈〉
+ * 〈 @com.alibaba.dubbo.config.annotation.Service 暴露接口,以便@Reference引用〉
  *
- * @author 22902
+ * @author zc
  * @create 2018/12/19
  */
+
 public class OrderServiceImpl implements OrderService {
 
     /**
@@ -21,16 +22,10 @@ public class OrderServiceImpl implements OrderService {
      */
     @Override
     public List<Order> getOrderByUserId(Integer userId) {
-        System.out.println("getOrderByUserId----------old");
         Order order1 = new Order(1, 1001, "201812190001", "北京通州马驹桥", "13000000000");
         Order order2 = new Order(2, 1001, "201812190002", "北京丰台七里庄", "13111111111");
         Order order3 = new Order(3, 1001, "201812190003", "北京", "13222222222");
         List<Order> orders = Arrays.asList(order1, order2, order3);
-      /*  try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }*/
         return orders;
     }
 }

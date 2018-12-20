@@ -9,3 +9,5 @@ dubbo:
     port: 20080
   monitor:
     protocol: registry # 连接监控中心
+#  scan:
+#    base-packages: cn.zcclj.dubbo.impl   # 在入口加了@EnableDubbo注解就不需要这个包扫描

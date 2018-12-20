@@ -3,19 +3,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>dubbo-study</artifactId>
+        <artifactId>day3</artifactId>
         <groupId>cn.zcclj.dubbo</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>day3</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>day3-zchao-api</artifactId>
 
-    <name>day3</name>
+    <name>day3-zchao-api</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.zcclj.dubbo</groupId>
+            <artifactId>day3-zchao-dao</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -62,8 +69,4 @@
             </plugins>
         </pluginManagement>
     </build>
-    <modules>
-        <module>day3-zchao-api</module>
-        <module>day3-zchao-dao</module>
-    </modules>
 </project>

@@ -1,18 +1,18 @@
 package cn.zcclj.dubbo;
 
-import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ImportResource;
 
 /**
- *  EnableDubbo 开启dubbo注解
+ *
  */
-@EnableDubbo
+@ImportResource(locations = "classpath:dubbo-consumer.xml")
 @SpringBootApplication
-public class Day2ZchaoServiceApplication {
+public class Day3ZchaoWebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Day2ZchaoServiceApplication.class, args);
+        SpringApplication.run(Day3ZchaoWebApplication.class, args);
     }
 
 }
