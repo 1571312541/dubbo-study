@@ -1,0 +1,16 @@
+package cn.zcclj.dubbo;
+
+import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+@DubboComponentScan(basePackages = "cn.zcclj.dubbo.impl")
+public class Day4ZchaoWebApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Day4ZchaoWebApplication.class, args);
+    }
+
+}
+

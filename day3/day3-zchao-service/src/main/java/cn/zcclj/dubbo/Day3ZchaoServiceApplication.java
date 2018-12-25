@@ -5,8 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
 /**
- * springboot和dubbo整合第二种方式
- * 保留xml文件
+ * 二、springboot和dubbo整合第二种方式 ---- 保留xml文件
+ *  1、创建xml文件
+ *  2、入口引用 @ImportResource(locations = "classpath:dubbo-provider.xml")
+ *  3、去掉@Service 、@Reference 注解
+ *
  */
 @ImportResource(locations = "classpath:dubbo-provider.xml")
 @SpringBootApplication
